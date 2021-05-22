@@ -1599,6 +1599,7 @@ void MVKPhysicalDevice::initFeatures() {
     _features.shaderInt16 = true;
     _features.multiDrawIndirect = true;
     _features.inheritedQueries = true;
+	_features.logicOp = true; // XXX Required by DXVK for D3D11.1
 
 	_features.shaderSampledImageArrayDynamicIndexing = _metalFeatures.arrayOfTextures;
 	_features.textureCompressionBC = mvkSupportsBCTextureCompression(_mtlDevice);
