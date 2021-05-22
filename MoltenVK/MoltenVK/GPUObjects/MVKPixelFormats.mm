@@ -778,7 +778,7 @@ void MVKPixelFormats::initVkFormatCapabilities() {
 	addVkFormatDesc( R8_SSCALED, Invalid, Invalid, Char, Char2, 1, 1, 1, ColorFloat );
 	addVkFormatDesc( R8_UINT, R8Uint, Invalid, UChar, UChar2, 1, 1, 1, ColorUInt8 );
 	addVkFormatDesc( R8_SINT, R8Sint, Invalid, Char, Char2, 1, 1, 1, ColorInt8 );
-	addVkFormatDesc( R8_SRGB, R8Unorm_sRGB, Invalid, UCharNormalized, UChar2Normalized, 1, 1, 1, ColorFloat );
+	addVkFormatDesc( R8_SRGB, R8Unorm_sRGB, R8Unorm, UCharNormalized, UChar2Normalized, 1, 1, 1, ColorFloat );
 
 	addVkFormatDesc( R8G8_UNORM, RG8Unorm, Invalid, UChar2Normalized, Invalid, 1, 1, 2, ColorFloat );
 	addVkFormatDesc( R8G8_SNORM, RG8Snorm, Invalid, Char2Normalized, Invalid, 1, 1, 2, ColorFloat );
