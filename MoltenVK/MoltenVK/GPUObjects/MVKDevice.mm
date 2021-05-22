@@ -1598,6 +1598,7 @@ void MVKPhysicalDevice::initFeatures() {
     _features.shaderCullDistance = true;  // XXX Required by DXVK for 10level9
     _features.shaderInt16 = true;
     _features.multiDrawIndirect = true;
+    _features.variableMultisampleRate = true;
     _features.inheritedQueries = true;
 	_features.logicOp = true; // XXX Required by DXVK for D3D11.1
 
@@ -1764,7 +1765,7 @@ void MVKPhysicalDevice::initFeatures() {
 //    VkBool32    sparseResidency8Samples;
 //    VkBool32    sparseResidency16Samples;
 //    VkBool32    sparseResidencyAliased;
-//    VkBool32    variableMultisampleRate;
+//    VkBool32    variableMultisampleRate;                      // done
 //    VkBool32    inheritedQueries;                             // done
 //} VkPhysicalDeviceFeatures;
 
